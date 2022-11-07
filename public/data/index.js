@@ -1,5 +1,3 @@
-import banner from "./CT-TOP-BAR-METRO-12-09.jpg";
-
 const categorySmall = [
     {name:"Televisores", link:"#"},
     {name:"Electrohogar", link:"#"},
@@ -38,4 +36,4 @@ const categoryAll = [
     {name:"Ropa y Calzado",link:"#"},
 ]
 
-export {banner, categorySmall, categoryAll};
+export {categorySmall, categoryAll};

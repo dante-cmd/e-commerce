@@ -1,10 +1,9 @@
 import React from 'react'
-import { banner } from '../data'
 
 const Banner = () => {
   return (
     <section className='banner w-full'>
-        <img src={banner} alt="" className='w-full' />
+        <img src="/data/CT-TOP-BAR-METRO-12-09.jpg" alt="" className='w-full' />
     </section>
 
   )

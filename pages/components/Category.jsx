@@ -1,5 +1,5 @@
 import React from "react";
-import { categoryAll } from "../data";
+import { categoryAll } from "../../public/data/index";
 
 
 const Category = () => {

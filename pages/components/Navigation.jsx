@@ -1,12 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { categorySmall } from "../data";
+import { categorySmall } from "../../public/data/index";
 import Category from "./Category";
-const Navbar = () => {
+
+
+const Navigation = () => {
   const [boolSwitchButton, setboolSwitchButton] = useState(false);
 
   useEffect(() => {
-    let windowBackground = document.querySelector('#root')
+    let windowBackground = document.querySelector('#__next')
     if (boolSwitchButton) {
       windowBackground.toggleAttribute("data-button-activate", true)
     } else {
@@ -15,7 +17,7 @@ const Navbar = () => {
   });
 
   return (
-    <section className='navigation "h-[90px] bg-yellow-300 max-w-[1440px] text-bit shadow-xl'>
+    <section className='navigation "h-[90px] bg-yellow-300 max-w-[1440px] text-[0.8rem] shadow-xl'>
       <div className="w-[94%] m-auto h-full flex py-2">
         <div className="category-button w-[150px] flex justify-center items-center">
           <button
@@ -51,4 +53,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navigation;
