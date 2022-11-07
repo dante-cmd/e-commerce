@@ -180,3 +180,35 @@ label[data-bool-switch-input="true"] {
   backdrop-filter: saturate(150%) blur(20px);
   cursor: pointer;
 }
+
+/* Card */
+.text__red {
+  color:rgb(179, 79, 93);
+  /* color:rgb(240, 22, 18); */
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.buttom__yellow {
+  background-color: #ffda00;
+  
+  /* #82b97dd5 */
+  color: #fff;
+  /* background-color: #ffda00; */
+  transition: all 0.15s;
+}
+.buttom__yellow:hover {
+  background-color: #ecca06;
+  color: #fff;
+  /* background-color: #ecca06; */
+}
+
+.buttom__red {
+  transition: all 0.15s;
+}
+.buttom__red:hover {
+  /* background-color: rgb(144, 199, 136); */
+  background-color: rgb(179, 79, 93);
+  color: #fff;
+}
