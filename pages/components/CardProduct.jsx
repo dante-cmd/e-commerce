@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 
 const link = 'https://wongfood.vteximg.com.br/arquivos/ids/537062-1000-1000/Pan-Chancay-Metro-Bolsa-12-Unid-1-81397.jpg'
-const CardProduct = () => {
+
+const CardProduct = ({linkImg, nameProduct, nameBrand, priceProduct}) => {
+
     const [msg, setMsg] = useState(1);
     const handleChange = (ev) => {
         const pattern = new RegExp('[a-z]+|[-*+/.,:;+~`]', 'i')
@@ -21,18 +23,18 @@ const CardProduct = () => {
     <section className='Card w-[12.8rem] h-auto 
     border border-gray-200 px-2 py-2 flex flex-col'>
         <div className='h-auto'>
-            <img src={link} alt=""/>
+            <img src={linkImg} alt=""/>
         </div>
         <div className=''>
             <div className='flex justify-center items-start h-10 flex-wrap'>
-                <p className='nunito text-xs font-bold'>Pan Chancay Metro</p>
+                <p className='nunito text-xs font-bold'>{nameProduct}</p>
             </div>
             <div className='flex justify-center items-center h-10'>
-                <p className='nunito text-sm'>METRO</p>
+                <p className='nunito text-sm'>{nameBrand}</p>
             </div>
             <div className='flex justify-between items-center h-10'>
                 <span className='nunito text__red'>Online</span>
-                <span className='nunito text__red'>S/6.49</span>
+                <span className='nunito text__red'>S/{priceProduct}</span>
             </div>
             <div className='flex flex-row'>
                 <div className='basis-[30%] flex flex-row '>

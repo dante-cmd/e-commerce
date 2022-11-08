@@ -22,6 +22,7 @@ export default async function consultCategory(req, res) {
         { $match: { category: category } },
         { $sort: orders[sort] },
         { $project: { _id: 0 } },
+        { $limit: 25 },
       ];
       if (sub_category && class_category) {
         query = [
@@ -53,10 +54,8 @@ export default async function consultCategory(req, res) {
 
       let result = await Product.aggregate(query);
 
-      let dataInit = {};
-      dataInit["data"] = result;
 
-      let data = JSON.stringify(dataInit);
+      let data = JSON.stringify(result);
       let dataToFront = JSON.parse(data);
 
       res.status(200).json(dataToFront);

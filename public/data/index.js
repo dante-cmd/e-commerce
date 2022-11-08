@@ -37,7 +37,7 @@ const categoryAll = [{'name': 'Frutas y Verduras', 'link': './frutas-y-verduras'
 
 const orderData = [
     { key: "id-13as", content: "Ordenar por" },
-    { key: "id-65as", content: "Más vendido" },
+    { key: "id-65as", content: "A-Z" },
     { key: "id-98as", content: "" },
   ];
   const dataSheft = [
