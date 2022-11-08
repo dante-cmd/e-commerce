@@ -191,7 +191,7 @@ label[data-bool-switch-input="true"] {
 
 
 .buttom__yellow {
-  background-color: #ffda00;
+  background-color: rgb(253 224 71 /1);
   
   /* #82b97dd5 */
   color: #fff;
@@ -199,7 +199,7 @@ label[data-bool-switch-input="true"] {
   transition: all 0.15s;
 }
 .buttom__yellow:hover {
-  background-color: #ecca06;
+  background-color: rgb(250, 224, 95);
   color: #fff;
   /* background-color: #ecca06; */
 }
@@ -212,3 +212,4 @@ label[data-bool-switch-input="true"] {
   background-color: rgb(179, 79, 93);
   color: #fff;
 }
+

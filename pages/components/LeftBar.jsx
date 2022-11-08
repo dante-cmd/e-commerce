@@ -106,31 +106,31 @@ const LeftBar = ({category}) => {
   };
 
   return (
-    <section className="left-bar h-full w-[200px] flex flex-col text-[0.85rem]">
-      <div className="flex-1 bg-white h-full w-full">
+    <section className="left-bar h-auto w-[200px] flex flex-col text-[0.85rem">
+      <div className="flex-1 h-full w-full">
         <div className="h-full w-full flex flex-col justify-start">
           {grouping.length===0 && <p>...Loading</p>}
           {grouping.length>0 && grouping.map((el) => (
-            <div className="max-h-[35rem] bg-white w-full overflow-hidden">
+            <div className="max-h-[35rem] h-auto w-full overflow-hidden">
               <div
-                className="cursor-pointer w-full h-[2rem] flex justify-start items-center border-b border-b-gray-400 px-5 hover:text-red-500"
+                className="cursor-pointer w-full h-[2rem] flex justify-start items-center border-dashed border-b border-b-gray-200 px-5 hover:text-red-600"
                 onClick={() => setEvent(el)}
               >
                 <span className="ml-2 capitalize">{el._id}</span>
               </div>
               {el.sub?.map((s, index) => (
                 <a
-                  className={` ${el._id} ${index==0 ? "mt-1":"mt-0"} h-0 transition-all hover:text-red-500 w-full flex justify-start items-center pl-5 text-[0.8rem]`}
-                  href={`./${s.class_category}`}
+                  className={` ${el._id} ${index==0 ? "mt-1":"mt-0"} h-0 transition-all hover:text-red-600 w-full flex justify-start items-center pl-5 text-[0.8rem]`}
+                  href={`/${category}/${el._id}/${s.class_category}`}
                 >
                   <span
                     className={`${el._id} capitalize transition-all pl-3 h-0 py-1`}
                   >
-                    {s.class_category}
+                    {s.class_category} ({s.total})
                   </span>
-                  <span className={`${el._id} transition-all h-0 ml-2`}>
-                    ({s.total})
-                  </span>
+                  {/* <span className={`${el._id} transition-all h-0 ml-2`}>
+                    
+                  </span> */}
                 </a>
               ))}
             </div>

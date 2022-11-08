@@ -1,15 +1,16 @@
 const categorySmall = [
-    {name:"Televisores", link:"#"},
-    {name:"Electrohogar", link:"#"},
-    {name:"Dormitorio", link:"#"},
-    {name:"Niños y Bebés", link:"#"},
-    {name:"Vinos y Licores", link:"#"},
-    {name:"Limpieza", link:"#"},
-    {name:"Aguas y Bebidas", link:"#"},
-    {name:"Lácteos", link:"#"},
+    {name:"Televisores", link:"./tecnologia"},
+    {name:"Electrohogar", link:"./electrohogar"},
+    {name:"Dormitorio", link:"./dormitorio"},
+    {name:"Niños y Bebés", link:"./ninos-y-bebes"},
+    {name:"Vinos y Licores", link:"./cervezas-vinos-y-licores"},
+    {name:"Limpieza", link:"./limpieza"},
+    {name:"Aguas y Bebidas", link:"./aguas-y-bebidas"},
+    {name:"Lácteos", link:"./lacteos"},
 ]
 
-const categoryAll = [{'name': 'Frutas y Verduras', 'link': './frutas-y-verduras'},
+const categoryAll = 
+[{'name': 'Frutas y Verduras', 'link': './frutas-y-verduras'},
 {'name': 'Carnes, Aves y Pescados', 'link': './carnes-aves-y-pescados'},
 {'name': 'Desayuno', 'link': './desayuno'},
 {'name': 'Lácteos', 'link': './lacteos'},

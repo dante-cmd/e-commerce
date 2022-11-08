@@ -1,20 +1,22 @@
 import React from "react";
-import BarNav from "../components/BarNav";
-import Container from "../components/Container";
-import LeftBar from "../components/LeftBar";
-import Crumb from "../components/Crumb";
+
+import BarNav from "../../../components/BarNav";
+import Container from "../../../components/Container";
+import LeftBar from "../../../components/LeftBar";
+import Crumb from "../../../components/Crumb";
 
 
 const index = ({ prop }) => {
-  const { category } = prop;
-  //   const category = "panaderia-y-pasteleria";
-  const sub_category = null;
-  const class_category = null;
+
+  const {category, sub_category , class_category } = prop;
 
   const crumbBar = [
     { name: "Metro", link: "/" },
-    { name: "Panadería y Pastelería", link: `/${category}` },
+    { name: category, link: `/${category}` },
+    { name: sub_category, link: `/${category}/${sub_category}` },
+    { name: class_category, link: `/${category}/${sub_category}/${class_category}` },
   ];
+
   return (
     <div>
       <BarNav />
