@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-const link = 'https://wongfood.vteximg.com.br/arquivos/ids/537062-1000-1000/Pan-Chancay-Metro-Bolsa-12-Unid-1-81397.jpg'
 
 const CardProduct = ({linkImg, nameProduct, nameBrand, priceProduct}) => {
 

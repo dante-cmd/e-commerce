@@ -50,7 +50,7 @@ const Container = ({category, sub_category, class_category}) => {
   }, [sort]);
 
   return (
-    <section className="container w-[calc(100%-300px)] ml-12 bg-white mt-10">
+    <section className="container w-[calc(100%-100px)] ml-12 bg-white mt-10">
       <div className="shelf-header h-14 w-full rounded-md flex flex-row  bg-yellow-300    ">
         <div className="w-[32rem] flex justify-start items-center px-5">
           <h2 className="text-2xl">{category}</h2>
