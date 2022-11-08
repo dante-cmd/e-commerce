@@ -3,7 +3,7 @@ import connectDB from "../../lib/dbConnect";
 import Product from "../../models/Product";
 
 
-export default async function consultCategory(req, res) {
+export default async function apiCount(req, res) {
   if (req.method == "GET") { 
     res.status(200).json({"dataToFront":50})
   }

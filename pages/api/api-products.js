@@ -9,7 +9,7 @@ const orders = {
   menorPrecio: { data_price: 1 },
 };
 
-export default async function consultCategory(req, res) {
+export default async function apiProduct(req, res) {
   if (req.method == "GET") { 
     res.status(200).json({"dataToFront":50})
   }
